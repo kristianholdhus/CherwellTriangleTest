@@ -1,6 +1,6 @@
 using System;
 
-namespace CherwellTriangleTest.Triangles
+namespace Triangles.Triangles
 {
     public class CoordinateMath
     {

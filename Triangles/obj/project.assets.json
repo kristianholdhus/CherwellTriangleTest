@@ -11886,11 +11886,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/holdhus/workspace/CherwellTriangleTest/CherwellTriangleTest.csproj",
-      "projectName": "CherwellTriangleTest",
-      "projectPath": "/home/holdhus/workspace/CherwellTriangleTest/CherwellTriangleTest.csproj",
+      "projectUniqueName": "/home/holdhus/workspace/CherwellTriangleTest/Triangles/Triangles.csproj",
+      "projectName": "Triangles",
+      "projectPath": "/home/holdhus/workspace/CherwellTriangleTest/Triangles/Triangles.csproj",
       "packagesPath": "/home/holdhus/.nuget/packages/",
-      "outputPath": "/home/holdhus/workspace/CherwellTriangleTest/obj/",
+      "outputPath": "/home/holdhus/workspace/Triangles/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/holdhus/.nuget/NuGet/NuGet.Config"

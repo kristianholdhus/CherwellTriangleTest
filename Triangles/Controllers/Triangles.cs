@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
-using CherwellTriangleTest.Triangles;
+using Triangles.Triangles;
 
-namespace CherwellTriangleTest.Controllers
+namespace Triangles.Controllers
 {
     public class Triangles : Controller
     {

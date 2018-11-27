@@ -1,6 +1,6 @@
 using System;
 
-namespace CherwellTriangleTest.Models
+namespace Triangles.Models
 {
     public class ErrorViewModel
     {

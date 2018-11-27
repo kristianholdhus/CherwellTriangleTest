@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using CherwellTriangleTest.Models;
+using Triangles.Models;
 
-namespace CherwellTriangleTest.Controllers
+namespace Triangles.Controllers
 {
     public class HomeController : Controller
     {
