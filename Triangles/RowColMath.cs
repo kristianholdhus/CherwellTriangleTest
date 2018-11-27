@@ -92,7 +92,7 @@ namespace CherwellTriangleTest.Triangles
             //  |   `.
             //  |     `.
             // Left----Right
-            if ((hLegLeftX == otherX) && (hLegLeftY + 10 == otherY)) {
+            if ((hLegLeftX == otherX) && (hLegLeftY - 10 == otherY)) {
                 return GetRowColForLowerTriangle(otherX, otherY);
             }
             // Left----Right
@@ -100,7 +100,7 @@ namespace CherwellTriangleTest.Triangles
             //     `.    |
             //       `.  |
             //         Other
-            if ((hLegRightX == otherX) && (hLegRightY - 10 == otherY)) {
+            if ((hLegRightX == otherX) && (hLegRightY + 10 == otherY)) {
                 return GetRowColForUpperTriangle(hLegLeftX, hLegLeftY);
             }
             throw new ArgumentOutOfRangeException("Illegal coordinate configuration where V1 and V2 are in horizontal leg." +
