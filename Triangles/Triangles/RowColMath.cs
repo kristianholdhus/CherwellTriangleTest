@@ -126,10 +126,10 @@ namespace Triangles.Triangles
             //      `.    |
             //        `.  |
             //        BotRight
-            if ((hypoBotRightX == otherX) && (hypoTopLeftX == otherY)) {
+            if ((hypoBotRightX == otherX) && (hypoTopLeftY == otherY)) {
                 return GetRowColForUpperTriangle(hypoTopLeftX, hypoTopLeftY);
             }
-            throw new ArgumentOutOfRangeException("Illegal coordinate configuration where V1 and V2 are in diagonal." +
+            throw new ArgumentOutOfRangeException("Illegal coordinate configuration where V1 and V2 are in diagonal. " +
                                                   $"Hypotenuse (TopLeft): ({hypoTopLeftX}, {hypoTopLeftY}), " +
                                                   $"Hypotenuse (BottomRight): ({hypoBotRightX}, {hypoBotRightY}), " +
                                                   $"Other: ({otherX}, {otherY})");
