@@ -2,6 +2,7 @@ using System;
 
 namespace Triangles.Triangles
 {
+    // Static utility class for computing Triangle Row and Column given coordinates for three vertices.
     public class RowColMath
     {
         // Will compute Row and Column of triangle. Vertices and be in any order, as long as they
@@ -57,6 +58,7 @@ namespace Triangles.Triangles
                                                   $"V1: ({v1x}, {v1y}), V2: ({v2x}, {v2y})");
         }
 
+        // Computes Row/Col for vertices where V1 and V2 form a vertical triangle leg.
         private static RowCol GetRowColForVerticalLeg(int vLegUpperX, int vLegUpperY,
                                                       int vLegLowerX, int vLegLowerY,
                                                       int otherX, int otherY)
@@ -83,6 +85,7 @@ namespace Triangles.Triangles
                                                   $"Other: ({otherX}, {otherY})");
         }
 
+        // Computes Row/Col for vertices where V1 and V2 form a horizontal triangle leg.
         private static RowCol GetRowColForHorizontalLeg(int hLegLeftX, int hLegLeftY,
                                                       int hLegRightX, int hLegRightY,
                                                       int otherX, int otherY)
@@ -109,6 +112,7 @@ namespace Triangles.Triangles
                                                   $"Other: ({otherX}, {otherY})");
         }
 
+        // Computes Row/Col for vertices where V1 and V2 form the hypotenuse.
         private static RowCol GetRowColForHypotenuse(int hypoTopLeftX, int hypoTopLeftY,
                                                       int hypoBotRightX, int hypoBotRightY,
                                                       int otherX, int otherY)
@@ -135,6 +139,7 @@ namespace Triangles.Triangles
                                                   $"Other: ({otherX}, {otherY})");
         }
 
+        // Computes Row/Col for vertices that for the shape of an upper triangle in a grid square.
         private static RowCol GetRowColForUpperTriangle(int topLeftX, int topLeftY)
         {
             // TopLeft---Other
@@ -155,6 +160,7 @@ namespace Triangles.Triangles
             return new RowCol(row, col);
         }
 
+        // Computes Row/Col for vertices that for the shape of a lower triangle in a grid square.
         private static RowCol GetRowColForLowerTriangle(int topLeftX, int topLeftY)
         {
             // TopLeft
@@ -175,6 +181,7 @@ namespace Triangles.Triangles
             return new RowCol(row, col);
         }
 
+        // Validates that a top-left coordinate is sane (within bounds, and multiple of 10).
         private static void ValidateTopLeftCoordinate(int topLeftX, int topLeftY)
         {
             if (!(topLeftX >= 0 && topLeftX <= 50)) {

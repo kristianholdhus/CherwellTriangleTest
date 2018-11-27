@@ -4,6 +4,7 @@ using Triangles.Triangles;
 
 namespace Triangles.Controllers
 {
+    // Restful Controller for interacting with Triangles
     public class Triangles : Controller
     {
         //

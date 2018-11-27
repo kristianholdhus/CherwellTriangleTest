@@ -2,6 +2,7 @@ using System;
 
 namespace Triangles.Triangles
 {
+    // Static utility class for computing Triangle coordinates given Row and Column
     public class CoordinateMath
     {
         public static Coordinates GetCoordinatesForRowCol(char row, int col)
@@ -25,7 +26,8 @@ namespace Triangles.Triangles
             }
         }
 
-        // rowIndex and colIndex are indexed-from-zero.
+        // Compute coordinates for a lower triangle in a grid square.
+        // For this method, rowIndex and colIndex are indexed-from-zero values.
         private static Coordinates GetLowerTriangleCoordinates(int rowIndex, int colIndex)
         {
 
@@ -48,7 +50,8 @@ namespace Triangles.Triangles
             return new Coordinates(v1x, v1y, v2x, v2y, v3x, v3y);
         }
 
-        // rowIndex and colIndex are indexed-from-zero.
+        // Compute coordinates for an upper triangle in a grid square.
+        // For this method, rowIndex and colIndex are indexed-from-zero values.
         private static Coordinates GetUpperTriangleCoordinates(int rowIndex, int colIndex)
         {
             //   v2------v1
