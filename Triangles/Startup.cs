@@ -44,7 +44,6 @@ namespace Triangles
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
 
@@ -56,7 +55,7 @@ namespace Triangles
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Triangles}/{action=Index}");
             });
         }
     }
