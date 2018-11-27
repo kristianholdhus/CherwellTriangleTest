@@ -77,7 +77,7 @@ namespace Triangles.Triangles
             if ((vLegUpperX - 10 == otherX) && (vLegUpperY == otherY)) {
                 return GetRowColForUpperTriangle(otherX, otherY);
             }
-            throw new ArgumentOutOfRangeException("Illegal coordinate configuration where V1 and V2 are in vertical leg." +
+            throw new ArgumentOutOfRangeException("Illegal coordinate configuration where V1 and V2 are in vertical leg. " +
                                                   $"Vertical Leg (Upper): ({vLegUpperX}, {vLegUpperY}), " +
                                                   $"Vertical Leg (Lower): ({vLegLowerX}, {vLegLowerY}), " +
                                                   $"Other: ({otherX}, {otherY})");
@@ -103,7 +103,7 @@ namespace Triangles.Triangles
             if ((hLegRightX == otherX) && (hLegRightY + 10 == otherY)) {
                 return GetRowColForUpperTriangle(hLegLeftX, hLegLeftY);
             }
-            throw new ArgumentOutOfRangeException("Illegal coordinate configuration where V1 and V2 are in horizontal leg." +
+            throw new ArgumentOutOfRangeException("Illegal coordinate configuration where V1 and V2 are in horizontal leg. " +
                                                   $"Horizontal Leg (Left): ({hLegLeftX}, {hLegLeftY}), " +
                                                   $"Horizontal Leg (Right): ({hLegRightX}, {hLegRightY}), " +
                                                   $"Other: ({otherX}, {otherY})");
