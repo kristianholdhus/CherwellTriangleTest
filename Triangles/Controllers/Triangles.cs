@@ -10,7 +10,7 @@ namespace Triangles.Controllers
         // GET: /Triangles/
         public string Index()
         {
-            return "This is my default action...";
+            return "Refer to README.md for instructions.";
         }
 
         //
